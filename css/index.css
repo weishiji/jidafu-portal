@@ -1,0 +1,748 @@
+/* 公共css start */
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.wrap-box {
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.hide {
+  width: 0 !important;
+  overflow: hidden;
+}
+/* 公共css end */
+
+.back-to-top {
+  position: fixed;
+  z-index: 10;
+  bottom: 50px;
+  right: 50px;
+  width: 45px;
+  height: 45px;
+  line-height: 53px;
+  text-align: center;
+  box-shadow: rgba(54, 54, 54, 0.15) 0px 2px 10px;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+}
+.back-to-top img {
+  width: 20px;
+}
+
+/* 导航-开始 */
+.header-box {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+.header-box .nav-box {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-box .nav-box .nav-item a {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  display: block;
+}
+
+.header-box .nav-box .nav-item a .line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #db261d;
+  display: none;
+  width: 100%;
+  height: 2px;
+}
+/* .wrap-box .header-box .nav-box .nav-item a .line:before {
+	content:"";
+  position:absolute;
+  left: 50%;
+  bottom: 100%;
+  margin-left: -6px;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid #db261d;
+  border-right: 6px solid transparent;
+} */
+.header-box .nav-box .nav-item a:hover {
+  color: #db261d;
+}
+.header-box .nav-box .nav-item.active a {
+  color: #db261d;
+}
+.header-box .nav-box .nav-item.active a .line {
+  display: block;
+}
+/* 导航-结束 */
+
+/* 轮播banner-开始 */
+.wrap-box .banner-box img {
+  width: 100%;
+  height: auto;
+}
+.wrap-box .banner-box .swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 6px;
+}
+
+.wrap-box .banner-box .swiper-pagination-bullet-active {
+  background: #333;
+}
+/* 轮播banner-结束 */
+
+/* 中间内容区-开始 */
+.wrap-box .content-box {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.wrap-box .content-box > div > .title {
+  text-align: center;
+}
+/* 中间内容区-结束 */
+
+/* 爆款产品-开始 */
+.explosive-products-box .swiper-button-prev,
+.explosive-products-box .swiper-button-next {
+  display: none;
+}
+.explosive-products-box .swiper-slide {
+  padding: 0 7px;
+}
+.explosive-products-box img {
+  width: 100%;
+  height: auto;
+}
+
+/* 爆款产品-结束 */
+
+.content-box .swiper-slide .product-item {
+  text-align: center;
+  padding-bottom: 5px;
+}
+.content-box .swiper-slide .product-item .product-name {
+  padding: 10px 0 5px;
+  font-size: 12px;
+}
+.content-box .swiper-slide .product-item .product-price {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.content-box .swiper-slide .product-item .learn-more,
+.online-store-list .online-store-item .learn-more {
+  border: 1px solid #ddd;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
+/* 在线商城-开始 */
+.content-box .online-store-list,
+.brand-combining-box .brand-combining-l:ist {
+  list-style: none;
+  overflow: hidden;
+}
+.content-box .online-store-list .online-store-item,
+.brand-combining-box .brand-combining-list .brand-combining-item {
+  width: 50%;
+  float: left;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.content-box .online-store-list .online-store-item .product-name {
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.content-box .online-store-list .online-store-item img {
+  /* width: 100%; */
+  margin: 0 auto;
+  height: auto;
+  display: block;
+}
+/* 在线商城-结束 */
+
+.brand-combining-box .brand-combining-list .brand-combining-item {
+  text-align: center;
+}
+.brand-combining-box .brand-combining-list .brand-combining-item img {
+  width: 80px;
+  margin: 0 auto;
+  display: block;
+}
+.brand-combining-box .brand-combining-list .brand-combining-item .tips {
+  display: block;
+  margin: 15px 0 0;
+}
+.brand-combining-box .brand-combining-list .brand-combining-item .line {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: #666;
+  margin: 0 auto;
+  position: relative;
+  top: -5px;
+}
+.brand-combining-box .brand-combining-list .brand-combining-item .tips-small {
+  font-size: 12px;
+  display: block;
+}
+
+.brand-combining-box .info {
+  padding: 30px 0 50px;
+  text-align: center;
+  font-size: 12px;
+}
+.brand-combining-box .info .tips0 {
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-align: center;
+}
+.brand-combining-box .info .tips1 {
+  background: #ccc;
+  padding: 3px 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  display: inline-table;
+}
+.brand-combining-box .info .tips2 {
+  font-size: 14px;
+}
+.contact-us-box {
+  font-size: 14px;
+  text-align: center;
+}
+.contact-us-box .tips {
+  margin-bottom: 15px;
+}
+
+.footer-box {
+  background: #fafafa;
+}
+.footer-box .content {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 30px;
+}
+
+.footer-box .info4 img {
+  width: 140px;
+}
+
+@media screen and (max-width: 750px) {
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .logo-box img {
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0 5px;
+  }
+
+  /* 导航-开始 */
+  .header-box .nav-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .header-box .nav-box .nav-item {
+    padding: 0 15px;
+  }
+  .header-box .nav-box .nav-item a {
+    font-size: 14px;
+    padding: 5px 0;
+    margin-bottom: 8px;
+  }
+
+  /* .wrap-box .header-box .nav-box .nav-item a .line:before {
+	  display: none;
+	} */
+  /* 导航-结束 */
+
+  /* 轮播banner-开始 */
+  .wrap-box .banner-box {
+    margin-bottom: 20px;
+  }
+  /* 轮播banner-结束 */
+
+  /* 中间内容区-开始 */
+  /* .wrap-box .content-box {
+    padding: 0 20px;
+  } */
+  .wrap-box .content-box > div {
+    margin-bottom: 15px;
+  }
+  .wrap-box .content-box .contact-us-box {
+    margin-bottom: 100px;
+  }
+  .wrap-box .content-box > div > .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  /* 中间内容区-结束 */
+
+  /* 关于纪大福-开始 */
+  .content-box .content {
+    text-align: center;
+  }
+  .about-jdf-box img {
+    width: 100%;
+  }
+  .about-jdf-box .tips-box {
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+    text-indent: 30px;
+  }
+  .about-jdf-box .tips-box .tips {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  /* 关于纪大福-结束 */
+
+  .content-box .online-store-list .online-store-item:nth-child(odd) {
+    padding-right: 10px;
+  }
+  .content-box .online-store-list .online-store-item:nth-child(even) {
+    padding-left: 10px;
+  }
+
+  .footer-box .info-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  .footer-box .info-box .tips {
+    margin-bottom: 15px;
+  }
+  .footer-box .info-box .line {
+    width: 1px;
+    height: 130px;
+    background: #999;
+    margin: 0 35px;
+  }
+
+  .footer-box .info3 {
+    text-align: center;
+  }
+  .footer-box .info3 .tips {
+    margin-bottom: 10px;
+  }
+  .footer-box .info4 {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .content .brand-online {
+    display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+  }
+
+  .content-box .brand-online .online-store-item {
+	  display: flex;
+	  border-radius: 2px;
+    justify-content: center;
+    align-content: center;
+    width: 180px;
+    height: 280px;
+    padding: 12px 4px;
+    border: 1px solid #edccd4;
+	  background-color: #fafafa;
+    text-align: center;
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+
+  .content-box .brand-online .online-store-item img {
+	  margin: 20px 0;
+  }
+
+  .content-box .brand-online .online-store-item .product-name {
+	  margin-bottom: 20px;
+  }
+
+  .content-box .brand-online .online-store-item .learn-more {
+	  position: relative;
+	  font-size: 16px;
+	  color: #fff;
+	  padding: 2px 10px;
+    background-color: #880404;
+    margin-left: 6px;
+    font-size: 12px;
+  }
+
+  .content-box .brand-online .online-store-item .learn-more:before {
+	position: absolute;
+    content: '';
+    width: 4px;
+    left: -6px;
+    height: 18px;
+    top: 0px;
+	  border: 1px solid #880404;
+	  background-color: #880404;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  .logo-box img {
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0 5px;
+  }
+
+  .brand-combining-box .brand-combining-list .brand-combining-item {
+    width: 25%;
+  }
+  
+  .footer-box .content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 20px auto 0;
+  }
+  .footer-box .info-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-box .info-box .line {
+    width: 1px;
+    height: 130px;
+    background: #999;
+    margin: 0 35px;
+  }
+  .footer-box .tips {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1240px) {
+  .wrap-box .banner-box .swiper-pagination-bullets {
+    bottom: 15px;
+  }
+
+  /* 导航-开始 */
+  .header-box .nav-box {
+    padding: 10px 0 20px;
+  }
+  .header-box .nav-box .nav-item a {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  /* 导航-结束 */
+
+  /* 轮播banner-开始 */
+  .wrap-box .banner-box {
+    margin-bottom: 30px;
+  }
+  /* 轮播banner-结束 */
+
+  /* 中间内容区-开始 */
+  .wrap-box .content-box .content {
+    padding: 0 50px;
+  }
+  .wrap-box .content-box > div {
+    margin-bottom: 30px;
+  }
+  .wrap-box .content-box > div > .title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  /* 中间内容区-结束 */
+
+  /* 关于纪大福-开始 */
+  .wrap-box .content-box .about-jdf-box .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap-box .content-box .about-jdf-box .content img {
+    width: 35%;
+    height: auto;
+    display: block;
+  }
+  .wrap-box .content-box .about-jdf-box .content .tips-box {
+    padding: 0 8%;
+    font-size: 16px;
+  }
+  .wrap-box .content-box .about-jdf-box .content .tips-box .tips {
+    text-indent: 44px;
+    margin-bottom: 25px;
+  }
+
+  /* 关于纪大福-结束 */
+
+  /* 在线商城-开始 */
+  .content-box .online-store-list .online-store-item {
+    width: 33.3%;
+    float: left;
+    margin-bottom: 15px;
+  }
+  .content-box .online-store-list .online-store-item {
+    padding: 0 7px;
+  }
+
+  .content .brand-online {
+    display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+  }
+
+  .content-box .brand-online .online-store-item {
+	display: flex;
+	border-radius: 2px;
+    justify-content: center;
+    align-content: center;
+    width: 250px;
+    height: 280px;
+    margin: 0px 10px 50px 10px;
+    padding: 12px 8px;
+    border: 1px solid #edccd4;
+	background-color: #fafafa;
+	text-align: center;
+  }
+
+  .content-box .brand-online .online-store-item img {
+	  margin: 20px 0;
+  }
+
+  .content-box .brand-online .online-store-item .product-name {
+	  margin-bottom: 20px;
+  }
+
+  .content-box .brand-online .online-store-item .learn-more {
+	  position: relative;
+	  font-size: 16px;
+	  color: #fff;
+	  padding: 2px 10px;
+	  background-color: #880404;
+  }
+
+  .content-box .brand-online .online-store-item .learn-more:before {
+	position: absolute;
+    content: '';
+    width: 4px;
+    left: -6px;
+    height: 100%;
+    top: 0px;
+	border: 1px solid #880404;
+	background-color: #880404;
+  }
+  /* 在线商城-结束 */
+}
+
+@media screen and (min-width: 1241px) {
+  .wrap-box .banner-box .swiper-pagination-bullets {
+    bottom: 25px;
+  }
+  .wrap-box .banner-box .swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    margin: 0 10px;
+  }
+
+  /* 导航-开始 */
+  .header-box .nav-box {
+    padding-bottom: 15px;
+  }
+  .header-box .nav-box .nav-item a {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+  /* 导航-结束 */
+
+  /* 轮播banner-开始 */
+  .wrap-box .banner-box {
+    margin-bottom: 50px;
+  }
+  /* 轮播banner-结束 */
+
+  /* 中间内容区-开始 */
+  .wrap-box .content-box .content {
+    padding: 0 100px;
+  }
+  .wrap-box .content-box > div {
+    margin-bottom: 50px;
+  }
+  .wrap-box .content-box > div > .title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  /* 中间内容区-结束 */
+
+  .wrap-box .content-box .about-jdf-box .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap-box .content-box .about-jdf-box .content img {
+    display: block;
+    width: 350px;
+  }
+  .wrap-box .content-box .about-jdf-box .content .tips-box {
+    margin: 0 8%;
+    font-size: 20px;
+  }
+  .wrap-box .content-box .about-jdf-box .content .tips-box .tips {
+    text-indent: 52px;
+    margin-bottom: 30px;
+  }
+  .explosive-products-box .swiper-button-prev,
+  .explosive-products-box .swiper-button-next {
+    display: block;
+    width: 18px;
+    height: 32px;
+    margin-top: -16px;
+    background-size: 18px 32px;
+  }
+  .explosive-products-box .swiper-button-prev {
+    left: 15px;
+  }
+  .explosive-products-box .swiper-button-next {
+    right: 15px;
+  }
+
+  /* 在线商城-开始 */
+  .content .brand-online {
+    display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: start;
+  }
+
+  .content-box .brand-online .online-store-item {
+	display: flex;
+	border-radius: 2px;
+    justify-content: center;
+    align-content: center;
+    width: 280px;
+    height: 280px;
+    margin: 0px 20px 50px 10px;
+    padding: 12px 8px;
+    border: 1px solid #edccd4;
+	background-color: #fafafa;
+	text-align: center;
+  }
+
+  .content-box .brand-online .online-store-item img {
+	  margin: 20px 0;
+  }
+
+  .content-box .brand-online .online-store-item .product-name {
+	  margin-bottom: 20px;
+  }
+
+  .content-box .brand-online .online-store-item .learn-more {
+	  position: relative;
+	  font-size: 16px;
+	  color: #fff;
+	  padding: 2px 10px;
+	  background-color: #880404;
+  }
+
+  .content-box .brand-online .online-store-item .learn-more:before {
+	position: absolute;
+    content: '';
+    width: 4px;
+    left: -6px;
+    height: 100%;
+    top: 0px;
+	border: 1px solid #880404;
+	background-color: #880404;
+  }
+  /* 在线商城-结束 */
+
+  .content-box .swiper-slide .product-item .product-name {
+    padding: 15px 0 5px;
+    font-size: 14px;
+  }
+  .content-box .swiper-slide .product-item .product-price {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .content-box .swiper-slide .product-item .learn-more,
+  .online-store-list .online-store-item .learn-more {
+    border: 1px solid #ddd;
+    padding: 3px 10px;
+    font-size: 15px;
+  }
+
+  .content-box .online-store-list .online-store-item .product-name {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+
+  .brand-combining-box .brand-combining-list .brand-combining-item img {
+    width: 130px;
+  }
+  .brand-combining-box .brand-combining-list .brand-combining-item .tips {
+    font-size: 20px;
+  }
+  .brand-combining-box .brand-combining-list .brand-combining-item .tips-small {
+    font-size: 14px;
+  }
+  .brand-combining-box .info .tips0,
+  .brand-combining-box .info .tips2 {
+    font-size: 16px;
+  }
+  .brand-combining-box .info .tips1 {
+    font-size: 20px;
+    margin: 15px 0;
+    padding: 5px 20px;
+  }
+
+  .contact-us-box {
+    font-size: 16px;
+  }
+
+  .footer-box .content {
+    font-size: 16px;
+    padding: 50px 100px 30px;
+  }
+
+  /* 导航-开始 */
+  /* 导航-结束 */
+}
